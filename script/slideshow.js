@@ -25,13 +25,8 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      //slides[i].style.display = "none";
-      // slides[i].classList.add("display_none");
       slides[i].classList.remove("display_block");
   }
-  // slides[slideIndex-1].classList.remove("display_none");
   slides[slideIndex-1].classList.add("display_block");
-  // slides[slideIndex-1].style.display = "block";
-  // setTimeout(plusSlides, 7000);
   lastTime = Date.now()
 }
