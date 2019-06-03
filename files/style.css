@@ -1,0 +1,17 @@
+a:link {
+         color: white;
+         text-decoration: none;
+         font-weight:bold;
+     }
+
+a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+}

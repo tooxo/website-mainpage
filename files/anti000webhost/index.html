@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Anti000WebHost - Till Schulte</title> 
+  <link href="https://s.chulte.de/hider.css" rel="stylesheet"> 
+  <script src="https://s.chulte.de/anti000webhost.js" type="text/javascript"></script> 
+  <script src="script.js" type="text/javascript"></script> 
+  <script src="clipboard.js" type="text/javascript"></script> 
+  <script async src="https://s.chulte.de/tracker.js"></script> 
+  <script>
+        window.onresize = function(event) {
+            document.getElementById('frame1').contentWindow.location.reload(true);
+        };
+    </script> 
+  <link href="style.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://tooxo.github.io/Anti000WebHostOverlay/hider.css">
+  <script type="application/javascript" src="https://tooxo.github.io/Anti000WebHostOverlay/anti000webhost.js"></script>
+ </head> 
+ <body> 
+  <div style="height: auto; width: 100%; position: absolute; background: #1b1b1b; top: 50px; left: 0; display: flex; align-items: center; justify-content: center"> 
+   <div style="width: 100%; height: 100%; top: 0; left: 0; position: fixed; background: #1b1b1b;"> 
+    <iframe height="100%" width="100%" id="frame1" src="../../dots.html" frameborder="0"></iframe> 
+   </div> 
+   <div style="z-index: 5; width: 40%; background: #1b1b1b;"> 
+    <center>
+     <span class="title" style="font-size: 65px;">Anti-000Webhost</span>
+    </center>
+    <br>
+    <br> 
+    <span class="text">This is a JavaScript + CSS combination, which hides the overlay, put in place by the free program of 000webhost.com, a common free hoster.</span>
+    <br>
+    <br>
+    <br> 
+    <center>
+     <span class="title">Seems cool, but how do I get it?</span>
+    </center>
+    <br>
+    <br> 
+    <span class="text">First you need to get the files. You can download them for yourself and add them to your server or simply include them by url.</span>
+    <br> 
+    <span class="text">Server1: s.chulte.de</span> 
+    <a onclick="copyToClipboard('https://s.chulte.de/anti000webhost.js')" href="javascript:void(0);">[FILE1-COPY]</a>
+    <a onclick="copyToClipboard('https://s.chulte.de/hider.css')" href="javascript:void(0);">[FILE2-COPY]</a>
+    <br> 
+    <span class="text">Server2: github.com</span> 
+    <a onclick="copyToClipboard('https://raw.githubusercontent.com/tooxo/Anti000WebHostOverlay/master/anti000webhost.js')" href="javascript:void(0);">[FILE1-COPY]</a>
+    <a onclick="copyToClipboard('https://raw.githubusercontent.com/tooxo/Anti000WebHostOverlay/master/hider.css')" href="javascript:void(0);">[FILE2-COPY]</a>
+    <br>
+    <br>
+    <br> 
+    <center>
+     <span class="title">Now I got the files, what to do with them?</span>
+    </center>
+    <br>
+    <br> 
+    <span class="text">Well, now you only need to implement them to every single visible web-page hosted on 000WebHost. Then it should work.</span>
+    <br>
+    <br>
+    <br> 
+    <center>
+     <span class="title">Wait, how do I implement them?</span>
+    </center>
+    <br>
+    <br> 
+    <span class="text">Okay, okay, okay, it's very easy. You only need to add these both lines to every HTML document used by you.</span>
+    <br> 
+    <span class="text">Add this: </span>
+    <a onclick="copyToClipboard('<script async type=\'text/javascript\' src=\'https://s.chulte.de/anti000webhost.js\'')" href="javascript:void(0);">[MIRROR1-COPY]</a>
+    <a onclick="copyToClipboard('<script async type=\'text/javascript\' src=\'https://raw.githubusercontent.com/tooxo/Anti000WebHostOverlay/master/anti000webhost.js\'')" href="javascript:void(0);">[MIRROR2-COPY]</a> 
+    <span class="text">anywhere in the file.</span>
+    <br> 
+    <span class="text">Then add this: </span>
+    <a onclick="copyToClipboard('<script async type=\'text/javascript\' src=\'https://s.chulte.de/hider.css\'')" href="javascript:void(0);">[MIRROR1-COPY]</a>
+    <a onclick="copyToClipboard('<script async type=\'text/javascript\' src=\'https://raw.githubusercontent.com/tooxo/Anti000WebHostOverlay/master/hider.css\'')" href="javascript:void(0);">[MIRROR1-COPY]</a> 
+    <span class="text">in the header of the file.</span>
+    <br>
+    <br>
+    <br> 
+    <center>
+     <span class="title">And now, you are ready.</span>
+    </center> 
+    <br> 
+    <center>
+     <a href=".."><span class="text">[Back]</span></a>
+    </center>
+    <br> 
+   </div> 
+  </div>  
+ </body>
+</html>

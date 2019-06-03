@@ -1,0 +1,338 @@
+/* General */
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Top part */
+.title {
+  font-size: 13vw;
+  font-weight: 700;
+  letter-spacing: 0px;
+  background-color: white;
+  transition: background-color 1.5s ease, color 500ms ease;
+}
+
+.title:hover {
+  color: white;
+  background-color: black;
+  transition: background-color 1.5s ease, color 500ms ease;
+}
+
+.text {
+  transition: background-color 1.5s ease, color 500ms ease;
+}
+
+.text:hover {
+  transition: background-color 1.5s ease, color 500ms ease;
+}
+
+div.top {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  width: 100vw;
+  /*height: 100vh;*/
+  /*  position: relative; */
+}
+
+img.mountains {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+
+/* Middle */
+div.middle {
+  background-color: #1b1b1b;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+	display: flex;
+	justify-content: center;
+  position: relative;
+  /* top: 100%; */
+  /*z-index: -5;*/
+  border-bottom-style: solid;
+}
+
+div.github {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+  top: 25%;
+  bottom: 125%;
+  left: 5%;
+  z-index: 2;
+  border-color: black;
+  border-style: solid;
+  border-radius: 25px;
+  background-image: url('https://i.ytimg.com/vi/OEGm7LXAN_c/maxresdefault.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  filter: invert(0%);
+  transition: filter 1s ease;
+}
+
+div.github:hover {
+  filter: invert(100%);
+  transition: filter 1s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  div.github {
+    height: 35vh;
+    width: 80vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+    background-image: url('https://i.ytimg.com/vi/OEGm7LXAN_c/maxresdefault.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    transition: filter 1s ease;
+  }
+}
+
+div.spotify {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+  bottom: 125%;
+  right: 5%;
+  background-image: url('/image/spotify.png');
+  background-position: center;
+  background-size: contain;
+  border-color: black;
+  border-style: solid;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  transition: filter 1s ease;
+}
+
+div.spotify:hover {
+  filter: invert(100%);
+  transition: filter 1s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  div.spotify {
+    height: 35vh;
+    width: 80vw;
+    position: absolute;
+    bottom: 15%;
+    top: auto;
+    left: 10%;
+    background-image: url('/image/spotify.png');
+    background-position: center;
+    background-size: contain;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    transition: filter 1s ease;
+  }
+}
+
+iframe.frame {
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+/* Bottom */
+div.bottom {
+  background-color: #1b1b1b;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h3.title {
+  font-size: 4em;
+  z-index: 1;
+}
+
+div.projects {
+  width: 60vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2vw;
+  z-index: 1;
+}
+
+div.project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+  height: 40vh;
+  border-color: white;
+  border-style: dashed;
+}
+
+a.smalltitle {
+  font-size: 3em;
+  text-align: center;
+}
+
+a.undertitle {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+div.projecttop {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+}
+
+div.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%
+}
+
+a.website_link {
+  color: white;
+  font-size: 170%;
+  font-weight: 600;
+}
+
+a.github_link {
+  color: white;
+  font-size: 170%;
+  font-weight: 600;
+}
+
+div.files {
+  height: 50vh;
+  width: 75vw;
+  top: 25%;
+  bottom: 25%;
+  right: 12%;
+  left: 12%;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/image/files.png');
+  background-position: center;
+  background-size: contain;
+  border-color: black;
+  border-style: solid;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  transition: filter 1s ease;
+  background-color: #FFF;
+}
+
+div.files:hover {
+  filter: invert(100%);
+  transition: filter 1s ease;
+}
+
+/* Footer */
+div.footer {
+  height: 5vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  left: 0;
+  background-color: #1b1b1b;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.topbutton {
+  position: absolute;
+  /* margin-left: -50px;
+  left: 50%; */
+	transform: scaleX(2);
+	font-size: 4vw;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+  bottom: 0;
+  z-index: 5;
+}
+
+.topbutton:active, .topbutton:checked, .topbutton:hover, .topbutton:visited, .topbutton:link {
+	text-decoration: none;
+}
+
+.middlebutton {
+  position: absolute;
+  margin-left: -50px;
+  left: 50%;
+  bottom: 0;
+  z-index: 5;
+}
+
+.bottombutton {
+  z-index: 2;
+  transform: rotate(180deg);
+  bottom: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+/* Impressum */
+a.impressum {
+  font-size: 1.5em;
+}
+
+a.impressum:link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.impressum:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.impressum:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.impressum:active {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
