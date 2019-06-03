@@ -6,8 +6,7 @@
     <!-- Scripts -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127069816-1"></script>
     <script async src="script/tracker.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Meta -->
     <title>Till Schulte</title>
     <meta charset="utf-8">
@@ -23,20 +22,20 @@
 </head>
 
 <body style="margin: 0; overflow-x: hidden;">
-    <div class="top" id="top" style="min-height: 100vh">
+    <div class="top" id="top">
         <h2> <a id="name" class="lato title un" style="text-align:center; z-index: 10;">Till Schulte</a> </h2>
         <img class="mountains" id="mountains" style="background-image: url('image/Mountainslowres.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <!-- <a class="topbutton" href="#middle"> <img src="image/arrow.png" style="width: 5vw; height: 5vw;"> </a> -->
+
         <a class="topbutton" href="#middle">V</a>
 
     </div>
     <div class="middle" id="middle">
         <a href="https://github.com/tooxo" target="_blank">
-	<div class="outergithub">            
-		<div class="github"></div></div>
+            <div class="github"></div>
         </a>
         <a href="https://open.spotify.com/user/ti_l_l" target="_blank">
-	  <div class="outerspotify">
-            <div class="spotify"></div></div>
+            <div class="spotify"></div>
         </a>
         <a class="topbutton" href="#bottom">V</a>
     </div>
@@ -77,6 +76,12 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+        <!-- <a href="#top" style="z-index: 2;"> <img src="image/arrow.png" class="bottombutton" style="width: 5vw; height: 5vw"> </a> -->
     </div>
 
     </div>
@@ -89,48 +94,63 @@
 
         <script src="script/resize.js"></script>
         <script src="script/slideshow.js"></script>
-        <script>
-		$.appear('div');
-                $(document.body).on('disappear', 'div', function(event, $all_disappeared_elements) {
-			$all_disappeared_elements.each(function() {
-				$(this).children().each(function() {
-					if ($(this).is("[src]")){
-						$(this).hide();
-					}
-				});
-				if ($(this).css("background-image") != "none"){
-					$(this).hide();
-				}
-				$(this).contents().each(function() {
-					try {	
-					if ($(this).css("background-image") != "none"){
-						$(this).hide();
-					}
-					} catch {}
-				});
-			});
-		    });
-                $(document.body).on('appear', 'div', function(event, $all_appeared_elements) {
-			$all_appeared_elements.each(function() {
-				$(this).children().each(function() {
-					if ($(this).tagName == "IMG"){
-						$(this).show();
-					}
-				});
-				if ($(this).css("background-image") != "none"){
-					$(this).show();
-				}
-				$(this).contents().each(function() {
-					try {	
-					if ($(this).css("background-image") != "none"){
-						$(this).show();
-					}
-					} catch  (e){}
-				});
-			});
-		    });	
-
-</script>
     </div>
 </footer>
+
 </html>
+
+<!--
+<a href="files" target="_blank">
+ <div class="files"></div> </a>
+-->
+
+
+<!-- <h3 class="title lato">Projects</h3>
+<div class="projects">
+    <div class="project">
+        <div class="projecttop">
+            <a id="projecttitle" class="lato smalltitle title">DiscordBot</a>
+            <a id="projectdesc" class="undertitle lato">A simple Discord Musicbot with Statistics</a>
+        </div>
+        <div class="links">
+            <a class="website_link lato" href="https://f.chulte.de" target="_blank">Website</a>
+            <a class="github_link lato" href="https://github.com/tooxo/Geiler-Musik-Bot" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="projecttop">
+            <a id="projecttitle" class="lato smalltitle title">Despacito</a>
+            <a id="projectdesc" class="undertitle lato">sabe sabe sito</a>
+        </div>
+        <div class="links">
+            <a class="website_link lato" href="https://f.chulte.de" target="_blank">NICE</a>
+            <a class="github_link lato" href="https://geil.de" target="_blank">Github</a>
+        </div>
+    </div>
+</div>
+
+<div class="projects">
+    <div class="project">
+        <div class="projecttop">
+            <a id="projecttitle" class="lato smalltitle title">DiscordBot</a>
+            <a id="projectdesc" class="undertitle lato">A simple Discord Musicbot with Statistics</a>
+        </div>
+        <div class="links">
+            <a class="website_link lato" href="https://f.chulte.de" target="_blank">Website</a>
+            <a class="github_link lato" href="https://github.com/tooxo/Geiler-Musik-Bot" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="projecttop">
+            <a id="projecttitle" class="lato smalltitle title">Despacito</a>
+            <a id="projectdesc" class="undertitle lato">sabe sabe sito</a>
+        </div>
+        <div class="links">
+            <a class="website_link lato" href="https://f.chulte.de" target="_blank">NICE</a>
+            <a class="github_link lato" href="https://geil.de" target="_blank">Github</a>
+        </div>
+    </div>
+</div>
+</div>

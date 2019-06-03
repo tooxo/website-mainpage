@@ -58,19 +58,14 @@ div.middle {
   border-bottom-style: solid;
 }
 
-div.outergithub {
-    height: 50vh;
+div.github {
+  height: 50vh;
   width: 40vw;
   position: absolute;
   top: 25%;
   bottom: 125%;
   left: 5%;
   z-index: 2;
-}
-
-div.github {
-  width: inherit;
-  height: inherit;
   border-color: black;
   border-style: solid;
   border-radius: 25px;
@@ -107,20 +102,15 @@ div.github:hover {
   }
 }
 
-div.outerspotify {
-    height: 50vh;
+div.spotify {
+  height: 50vh;
   width: 40vw;
   position: absolute;
   top: 25%;
   z-index: 2;
   bottom: 125%;
   right: 5%;
-}
-
-div.spotify {
-width: inherit;
-height: inherit;  
-background-image: url('/image/spotify.png');
+  background-image: url('/image/spotify.png');
   background-position: center;
   background-size: contain;
   border-color: black;
