@@ -62,6 +62,10 @@ app.get('/image/lights.gif', (req, res) => {
   res.sendFile(path.join(__dirname + "/image/lights.gif"));
 });
 
+app.get('/image/discord.gif', (req, res) => {
+  res.sendFile(path.join(__dirname + "/image/discord.gif"));
+});
+
 /*
 
   scripts
