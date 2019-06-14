@@ -46,7 +46,7 @@
   position: relative;
   bottom: 0px;
   font-weight: 600;
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -57,13 +57,13 @@
   position: relative;
   bottom: 0;
   font-weight: 300;
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-block-end: 0;
   margin-block-start: 0;
 }
 
 .textbox {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(27, 27, 27, 0.5);
   text-align: center;
   width: 100%;
   position: absolute;
