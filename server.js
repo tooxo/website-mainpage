@@ -70,6 +70,10 @@ app.get('/image/more.gif', (req, res) => {
   res.sendFile(path.join(__dirname + "/image/more.gif"));
 });
 
+app.get('/image/spotifyrandom.gif', (req, res) => {
+  res.sendFile(path.join(__dirname + "/image/spotifyrandom.gif"));
+});
+
 /*
 
   scripts
