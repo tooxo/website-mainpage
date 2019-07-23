@@ -10,6 +10,14 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/static/index.html'));
 });
 
+app.get('/reddit', (req, res) => {
+  res.sendFile(path.join(__dirname + '/static/subr-dl.html'));
+});
+
+app.get('/reddit/explanation', (req, res) => {
+  res.sendFile(path.join(__dirname + '/static/subr-dl-explanation.html'));
+});
+
 /*
 
   stylesheets
@@ -74,6 +82,10 @@ app.get('/image/spotifyrandom.gif', (req, res) => {
   res.sendFile(path.join(__dirname + "/image/spotifyrandom.gif"));
 });
 
+app.get('/image/reddit.gif', (req, res) => {
+  res.sendFile(path.join(__dirname + "/image/reddit.gif"));
+});
+
 /*
 
   scripts
@@ -94,6 +106,14 @@ app.get('/script/tracker.js', (req, res) => {
 
 app.get('/script/slideshow.js', (req, res) => {
   res.sendFile(path.join(__dirname + "/script/slideshow.js"));
+});
+
+app.get('/script/FileSaver.js', (req, res) => {
+  res.sendFile(path.join(__dirname + "/script/FileSaver.js"));
+});
+
+app.get('/script/jszip.js', (req, res) => {
+  res.sendFile(path.join(__dirname + "/script/jszip.js"));
 });
 
 /*
@@ -120,6 +140,6 @@ app.get('/favicon.ico', (req, res) => {
   res.sendFile(path.join(__dirname + "/favicon.ico"));
 });
 
-app.use('/files', express.static(path.join(__dirname, 'files')));
+app.use('/files', express.static(path.join(__dirname, '/static/files')));
 
 app.listen(PORT, HOST);

@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Reddit Image Downloader</title>
+    <script src="/script/jszip.js"></script>
+    <script src="/script/FileSaver.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body style="overflow: hidden; background-color: rgb(32, 34, 36);">
+<div style="display: flex; height: 100vh; width: 100vw; justify-content: center; align-items: center; flex-direction: column">
+    <a style="position: fixed; color: white; top: 0; left: 0; padding: 10px; font-family: Ubuntu, sans-serif" href="/">
+        ➥ Homepage </a>
+    <div>
+        <h1 id="title" style="color: white; margin-bottom: 0; padding-bottom: 0; top: 0; position: relative;">Reddit
+            Image Downloader</h1>
+        <center><a href="/reddit/explanation"><h4 style="color: white; top: 0; padding-top: 0; margin-top: 0"
+                                                  title="Click Me.">How does it work?</h4></a></center>
+    </div>
+    <div>
+
+        <input id="subreddit" placeholder="subreddit" type="text">
+        <input id="count_of_images" type=number placeholder="number of images">
+        <button id="submit" onclick="submit()">Submit</button>
+    </div>
+    <p style="font-weight: 700; position: fixed; bottom: 0; color: white;">You can download a python representation of
+        this <a target="_blank" href="https://gist.github.com/tooxo/b52b12216b4ed27806da93a813615a52"
+                style="color: white">here</a></p>
+</div>
+<script>
+    let submit = function () {
+        let subreddit = document.getElementById("subreddit").value;
+        let count_of_images = document.getElementById("count_of_images").value;
+        let images = [];
+        let zip = JSZip();
+        let image_folder = zip.folder("images");
+        let empty_runs = 0;
+        let crawl_runs = 0;
+
+        function get_images(after = null) {
+            let url;
+            if (after === null) {
+                url = "https://www.reddit.com/r/" + subreddit + "/top/.json?t=all"
+            } else {
+                url = "https://www.reddit.com/r/" + subreddit + "/top/.json?t=all&after=" + after
+            }
+            fetch(url)
+                .then(res => res.json())
+                .then(json => {
+                    let items_appended = 0;
+                    crawl_runs++;
+
+                    for (let image of json.data.children) {
+                        if (images.length >= count_of_images) {
+                            break;
+                        }
+                        if (image.data.is_video === true || image.data.is_self === true) {
+                            continue;
+                        }
+                        if (!image.data.url.includes("redd") && !image.data.url.includes("imgur")) {
+                            continue;
+                        }
+                        let regex = /(http|https):\/\/imgur.com\/[a-zA-z0-9]*/gm;
+                        if (image.data.url.match(regex)) {
+                            image.data.url = image.data.url.replace("imgur", "i.imgur");
+                            image.data.url += ".jpg"
+                        }
+
+                        let object = {
+                            'name': image.data.title,
+                            'image_url': image.data.url,
+                            'id': image.data.id
+                        };
+                        images.push(object);
+                        items_appended++;
+                    }
+                    let cont = false;
+                    document.getElementById("title").innerText = "Crawling Images. Images found: [" + images.length + "/" + count_of_images + "]";
+                    if (items_appended === 0) {
+                        empty_runs++;
+                        if (empty_runs >= 3) {
+                            if (images.length === 0) {
+                                alert("Found no images after 3 retries. Aborting.");
+                                return
+                            } else {
+                                cont = true
+                            }
+                        }
+                    }
+                    if (json.data.after === null) {
+                        cont = true;
+                        count_of_images = images.length;
+                    }
+                    if (images.length < count_of_images && cont === false) {
+                        setTimeout(function () {
+                            get_images(json.data.after)
+                        }, 1000);
+                    } else {
+                        function download_image(url, callback, outputFormat) {
+                            url = 'https://cors-anywhere.herokuapp.com/' + url;
+                            let img = new Image();
+                            img.crossOrigin = 'Anonymous';
+                            img.onload = function () {
+                                let canvas = document.createElement('canvas');
+                                let ctx = canvas.getContext('2d');
+                                let dataUrl;
+                                canvas.height = this.naturalHeight;
+                                canvas.width = this.naturalWidth;
+                                ctx.drawImage(this, 0, 0);
+                                dataUrl = canvas.toDataURL(outputFormat);
+                                callback(dataUrl.replace(/^data:image\/(png|jpg|jpeg);base64,/, ""));
+                            };
+                            img.src = url;
+                            if (img.complete || img.complete === undefined) {
+                                img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+                                img.src = url
+                            }
+                        }
+
+                        function run_images() {
+                            if (images.length > 0) {
+                                let format;
+                                if (images[0].image_url.split(".")[images[0].image_url.split(".").length - 1] === "png") {
+                                    format = "image/png";
+                                } else {
+                                    format = "image/jpeg"
+                                }
+                                download_image(images[0].image_url, function (result) {
+                                    let regex = /.*(.jpg|.jpeg|.png)/gm;
+                                    let filename;
+                                    if (!images[0].image_url.match(regex)) {
+                                        filename = images[0].id + ".jpeg"
+                                    } else {
+                                        filename = images[0].image_url.split("/")[images[0].image_url.split("/").length - 1]
+                                    }
+                                    image_folder.file(filename, result, {base64: true});
+                                    images.shift();
+                                    document.getElementById("title").innerText = "Downloading Images: [" + (count_of_images - images.length) + "/" + count_of_images + "]"
+                                    setTimeout(function () {
+                                        run_images()
+                                    }, 1000)
+                                }, format)
+
+                            } else {
+                                document.getElementById("title").innerText = "Done!";
+                                zip.generateAsync({type: 'blob'})
+                                    .then(function (content) {
+                                        saveAs(content, subreddit.toLowerCase() + ".zip");
+                                    })
+                            }
+                        }
+
+                        run_images();
+                    }
+                })
+                .catch(err => {
+                    alert(err);
+                })
+        }
+
+        get_images();
+    };
+</script>
+</body>
+</html>
