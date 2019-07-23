@@ -32,6 +32,18 @@
     let submit = function () {
         let subreddit = document.getElementById("subreddit").value;
         let count_of_images = document.getElementById("count_of_images").value;
+        if (!subreddit && !count_of_images){
+            alert("You need to fill the fields.");
+            return;
+        }
+        if (!count_of_images){
+            alert("You need to fill in a number.");
+            return;
+        }
+        if (!subreddit){
+            alert("You need to provide a subreddit.");
+            return
+        }
         let images = [];
         let zip = JSZip();
         let image_folder = zip.folder("images");
@@ -155,7 +167,7 @@
                     }
                 })
                 .catch(err => {
-                    alert(err);
+                    console.log(err);
                 })
         }
 

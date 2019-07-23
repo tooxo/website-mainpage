@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63783ea5-a791-4fb0-a0ea-506291242db2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/till.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/FileSaver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/subr-dl-explanation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/subr-dl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ShutdownAndRestart/Assets.7z" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/ShutdownAndRestart/Assets.7z" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ShutdownAndRestart/ShutdownAndRestart.jar" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/ShutdownAndRestart/ShutdownAndRestart.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ShutdownAndRestart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/ShutdownAndRestart/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ShutdownAndRestart/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/ShutdownAndRestart/screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ShutdownAndRestart/screenshot2.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/ShutdownAndRestart/screenshot2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/anti000webhost/clipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/anti000webhost/clipboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/anti000webhost/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/anti000webhost/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/anti000webhost/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/anti000webhost/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/anti000webhost/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/anti000webhost/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/dots/dots.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/dots/dots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/dots/dots.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/dots/dots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/dots/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/dots/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-latest/MassRP-24072018-1401.jar" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-latest/MassRP-24072018-1401.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-latest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-latest/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-latest/screenshot.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-latest/screenshot.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/.assets/dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/.assets/dir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/.assets/dir.php" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/.assets/dir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/.assets/dots.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/.assets/dots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/.assets/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/.assets/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/.assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/.assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/MassRP-23072018-0132.jar" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/MassRP-23072018-0132.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/MassRP-release-21072018-2331.zip" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/MassRP-release-21072018-2331.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/MassRP-release-22072018-0104.zip" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/MassRP-release-22072018-0104.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/MassRP-release-22072018-1107.zip" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/MassRP-release-22072018-1107.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/massrp-old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/massrp-old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/files/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/subr-dl.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/subr-dl.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/subr-dl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="148" column="90" selection-start-line="148" selection-start-column="90" selection-end-line="148" selection-end-column="90" />
+            <state relative-caret-position="234">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -261,18 +228,18 @@
       <workItem from="1560522068388" duration="46000" />
       <workItem from="1563200745607" duration="1115000" />
       <workItem from="1563294460612" duration="49000" />
-      <workItem from="1563892300966" duration="17646000" />
+      <workItem from="1563892300966" duration="18408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20148000" />
+    <option name="totallyTimeSpent" value="20910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12119535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12119535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -288,7 +255,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32779455" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23434125" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23434125" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -373,8 +340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/subr-dl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="148" column="90" selection-start-line="148" selection-start-column="90" selection-end-line="148" selection-end-column="90" />
+        <state relative-caret-position="234">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
