@@ -24,6 +24,10 @@ app.get('/error', (req, res) => {
     res.render('error', {error_code: 1})
 });
 
+app.get('/impressum', (req, res) => {
+    res.sendFile(path.join(__dirname + '/static/impressum.html'));
+});
+
 /*
 
   stylesheets
