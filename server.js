@@ -20,12 +20,18 @@ app.get('/reddit/explanation', (req, res) => {
     res.sendFile(path.join(__dirname + '/static/subr-dl-explanation.html'));
 });
 
-app.get('/error', (req, res) => {
-    res.render('error', {error_code: 1})
-});
-
 app.get('/impressum', (req, res) => {
     res.sendFile(path.join(__dirname + '/static/impressum.html'));
+});
+
+app.get('/travel/update', (req, res) => {
+    if (req.header('User-Agent') === "TravelAssistant"){
+		res.status(302);		
+		res.redirect("https://gist.githubusercontent.com/tooxo/09638045a27f75d30149bf9058dc6c03/raw/48871768476ccf6fac0a1505111e575a7910c7e1/TravelAssistantData.json");	
+}else {
+	res.status(403);
+	res.render('error', {error: "403 – FORBIDDEN!"});
+}
 });
 
 /*
