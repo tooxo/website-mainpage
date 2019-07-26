@@ -5,6 +5,8 @@ const HOST = '0.0.0.0';
 
 const app = express();
 const path = require('path');
+const request = require('request');
+
 app.set('view engine', 'vash');
 
 
@@ -26,8 +28,22 @@ app.get('/impressum', (req, res) => {
 
 app.get('/travel/update', (req, res) => {
     if (req.header('User-Agent') === "TravelAssistant"){
-		res.status(302);		
-		res.redirect("https://gist.githubusercontent.com/tooxo/09638045a27f75d30149bf9058dc6c03/raw/48871768476ccf6fac0a1505111e575a7910c7e1/TravelAssistantData.json");	
+        if (req.header('Version-Code')){
+            request("https://gist.githubusercontent.com/tooxo/09638045a27f75d30149bf9058dc6c03/raw/48871768476ccf6fac0a1505111e575a7910c7e1/TravelAssistantData.json",{"User-Agent": "tooxo"}, function (error, response, body) {
+                let jsonObj = JSON.parse(body);
+                let version = jsonObj.version;
+                if (req.header('Version-Code') < version){
+                    res.status(200);
+                    res.send(body);
+                }else{
+                    res.status(200);
+                    res.send("NO UPDATE AVAILABLE.");
+                }
+            })
+        }else {
+            res.status(403);
+            res.render('error', {error: "403 – FORBIDDEN!"});
+        }
 }else {
 	res.status(403);
 	res.render('error', {error: "403 – FORBIDDEN!"});
