@@ -162,9 +162,14 @@ app.get('/dots', (req, res) => {
     } catch (e) {
         color = "#1b1b1b"
     }
-    if (!colorNames.includes(color.toLowerCase())) {
-        color = "#" + color;
+    try {
+        if (!colorNames.includes(color.toLowerCase())) {
+            color = "#" + color;
+        }
+    }catch (e) {
+        color = "#1b1b1b"
     }
+
     res.render('dots', {background_color: color});
 });
 
@@ -189,6 +194,7 @@ app.use((req, res, next) => {
 });
 
 app.use(function (err, req, res, next) {
+    console.log(err);
     res.status(err.status || 500);
     res.render('error', {
         error: '500 – INTERNAL SERVER ERROR!'
