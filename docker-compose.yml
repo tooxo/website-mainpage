@@ -8,4 +8,11 @@ services:
             - /usr/src/app/node_modules
         ports:
             - "8002:8080"
-
+    web2:
+        build:
+            context: ./SpotifyToMp3
+        command: /bin/sh -c "cd /usr/src/app/ && gunicorn --bind=0.0.0.0:8006 wsgi:app"
+        volumes:
+            - ./SpotifyToMp3:/usr/src/app/
+        ports:
+            - "8006:8006"

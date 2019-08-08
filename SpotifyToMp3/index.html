@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify2Mp3</title>
+    <script src="fs.js"></script>
+    <script src="zip.js"></script>
+    <script src="download.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body style="overflow: hidden; margin: 0">
+<div style="display: flex; height: 100vh; width: 100%; border: 0; margin: 0; padding: 0; justify-content: space-between; align-items: center; flex-direction: column">
+    <iframe src="https://s.chulte.de/dots"
+            style="width: 100vw; height: 100vh; position: fixed; z-index: -1; background: #1b1b1b"></iframe>
+    <div style="height: 55%; width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; border: 0">
+        <h1 style="font-family: 'Lato', sans-serif; font-weight: 700; color: white">Spotify2Mp3</h1>
+        <div style="width: 100%;">
+            <center>
+                <input style="width: 30%" id="input_field">
+                <button id="button">Submit!</button>
+            </center>
+        </div>
+    </div>
+    <div style="height: 45%; width: 100vw; background: black; bottom: 0; border-top: solid lightgreen; ">
+        <textarea
+                style="height: 98%; width: 100%; border: 0; margin: 0; padding: 0; resize: none; background: black; color: lightgreen; font-size: 2em"
+                readonly id="textArea">
+
+        </textarea>
+    </div>
+</div>
+</body>
+</html>
