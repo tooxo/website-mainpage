@@ -4,9 +4,10 @@ import base64
 import youtube_dl
 import requests
 from queue import Queue
+import os
 
-CLIENT_ID = "fdf322abb74a46cca505004b23c7530c"
-CLIENT_SECRET = "e262390982eb443281da04bb3a0af1dc"
+CLIENT_ID = os.environ.get("CLIENT_ID", "")
+CLIENT_SECRET = os.environ.get("CLIENT_SECRET", "")
 
 epoch = 0
 app = Flask(__name__)

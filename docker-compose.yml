@@ -16,3 +16,5 @@ services:
             - ./SpotifyToMp3:/usr/src/app/
         ports:
             - "8006:8006"
+        env_file:
+          - ./SpotifyToMp3/vars.env
