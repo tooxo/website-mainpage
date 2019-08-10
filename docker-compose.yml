@@ -7,14 +7,31 @@ services:
             - .:/usr/src/app/
             - /usr/src/app/node_modules
         ports:
-            - "8002:8080"
+            - "8003:8080"
+        labels:
+            - traefik.frontend.rule=Host:s.chulte.de;PathPrefixStrip:/
+            - traefik.enable=true
+            - traefik.frontend.priority=5
+#            - traefik.frontend.entryPoints=https,http
+        networks:
+            - web
     web2:
         build:
             context: ./SpotifyToMp3
-        command: /bin/sh -c "cd /usr/src/app/ && gunicorn --bind=0.0.0.0:8006 wsgi:app"
+        command: /bin/sh -c "cd /usr/src/app/ && python server.py"
         volumes:
             - ./SpotifyToMp3:/usr/src/app/
         ports:
             - "8006:8006"
         env_file:
           - ./SpotifyToMp3/vars.env
+        labels:
+          - traefik.frontend.rule=Host:s.chulte.de;PathPrefixStrip:/spotify2mp3
+          - traefik.enable=true
+          - traefik.frontend.priority=26
+        networks:
+          - web
+
+networks:
+     web:
+        external: true
