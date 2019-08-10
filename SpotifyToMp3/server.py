@@ -180,3 +180,6 @@ def request_token():
         REQUEST_TOKEN["token"] = access_token
         REQUEST_TOKEN["last"] = int(time.time())
         return access_token
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=8006)

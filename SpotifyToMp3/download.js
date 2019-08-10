@@ -56,7 +56,7 @@ let getTracks = function (spotify_url) {
         console.log(e)
     }
     fetch(
-        './api/spotify/playlist?id=' + spotify_url
+        'api/spotify/playlist/?id=' + spotify_url
     ).then(
         function (response) {
             return response.text()
@@ -78,7 +78,7 @@ let getTracks = function (spotify_url) {
 
             function getStreamUrl(array, callback) {
                 let title = array[0];
-                fetch('./api/youtube/stream', {
+                fetch('api/youtube/stream', {
                     method: 'POST',
                     body: title,
                     headers: {
@@ -123,7 +123,7 @@ let getTracks = function (spotify_url) {
                         if (streams[count] === '') {
                             callback()
                         } else {
-                            fetch('./api/youtube/download', {
+                            fetch('api/youtube/download', {
                                 method: 'POST',
                                 body: streams[count]
                             })
