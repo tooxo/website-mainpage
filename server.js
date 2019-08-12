@@ -166,7 +166,7 @@ app.get('/dots', (req, res) => {
         if (!colorNames.includes(color.toLowerCase())) {
             color = "#" + color;
         }
-    }catch (e) {
+    } catch (e) {
         color = "#1b1b1b"
     }
 
@@ -188,6 +188,10 @@ app.get('/favicon.ico', (req, res) => {
 });
 
 app.use('/files', express.static(path.join(__dirname, '/static/files')));
+
+app.get('/ragecaptcha', (req, res) => {
+    res.sendFile(path.join(__dirname + "/static/rageCaptcha.html"))
+});
 
 app.use((req, res, next) => {
     res.status(404).render('error', {error: '404 – NOT FOUND!'})

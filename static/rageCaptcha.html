@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>rageCaptcha</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        span {
+            font-size: 2em;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background: #1b1b1b;
+        }
+
+        button {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        a {
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+    <script>let f = function (response) {
+        if (grecaptcha.getResponse() === '') {
+            console.log("not done yet")
+        } else {
+            let int = parseInt(document.getElementById("count").innerText);
+            int = int + 1;
+            document.getElementById("count").innerText = int;
+            grecaptcha.reset()
+        }
+    }</script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body style="margin: 0">
+
+<div style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw;">
+    <a style="position: fixed; top: 5px; left: 5px;" href="javascript:history.back()"> ➥ Back </a>
+    <div>
+        <center><span>Score: </span><span id="count">0</span></center>
+        <form action="?" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LfaobIUAAAAAGJr-EzDIMSf3JmwQODaBku5QHNY"></div>
+        </form>
+        <center>
+            <button onclick="f()">Submit</button>
+        </center>
+    </div>
+
+    <div style="position: fixed; bottom: 0;">
+        <span>Solve CAPTCHAs as long as you can.</span>
+    </div>
+</div>
+
+</body>
+</html>
