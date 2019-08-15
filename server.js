@@ -1,8 +1,8 @@
-const express = require('express');
 
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
+const express = require("express");
 const app = express();
 const path = require('path');
 const request = require('request');
@@ -34,7 +34,7 @@ app.get('/travel/update', (req, res) => {
                 let version = jsonObj.version;
                 if (req.header('Version-Code') < version) {
                     res.status(200);
-                    res.send(body);
+                    res.send(JSON.stringify(jsonObj));
                 } else {
                     res.status(200);
                     res.send("NO UPDATE AVAILABLE.");
