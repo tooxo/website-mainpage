@@ -1,4 +1,3 @@
-
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
@@ -66,6 +65,10 @@ app.get('/stylesheets/title.css', (req, res) => {
 
 app.get('/stylesheets/slideshow.css', (req, res) => {
     res.sendFile(path.join(__dirname + "/stylesheets/slideshow.css"));
+});
+
+app.get('/stylesheets/flames.css', (req, res) => {
+    res.sendFile(path.join(__dirname + "/stylesheets/flames.css"));
 });
 
 /*
@@ -148,6 +151,10 @@ app.get('/script/jszip.js', (req, res) => {
     res.sendFile(path.join(__dirname + "/script/jszip.js"));
 });
 
+app.get('/script/flames.js', (req, res) => {
+    res.sendFile(path.join(__dirname + "/script/flames.js"));
+});
+
 /*
 
   dots
@@ -175,6 +182,10 @@ app.get('/dots', (req, res) => {
 
 app.get('/dots/dots.js', (req, res) => {
     res.sendFile(path.join(__dirname + "/script/dots.js"));
+});
+
+app.get('/flames', (req, res) => {
+    res.sendFile(path.join(__dirname + "/static/flames.html"));
 });
 
 /*
