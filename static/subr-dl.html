@@ -31,15 +31,15 @@
     let submit = function () {
         let subreddit = document.getElementById("subreddit").value;
         let count_of_images = document.getElementById("count_of_images").value;
-        if (!subreddit && !count_of_images){
+        if (!subreddit && !count_of_images) {
             alert("You need to fill the fields.");
             return;
         }
-        if (!count_of_images){
+        if (!count_of_images) {
             alert("You need to fill in a number.");
             return;
         }
-        if (!subreddit){
+        if (!subreddit) {
             alert("You need to provide a subreddit.");
             return
         }
@@ -173,5 +173,21 @@
         get_images();
     };
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127069816-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127069816-1');
+</script>
+
+
 </body>
 </html>

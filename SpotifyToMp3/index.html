@@ -32,7 +32,26 @@
     </div>
 </div>
 <script>
-if (!window.location.href.endsWith("/")){self.location=window.location.href+"/"};
+    if (!window.location.href.endsWith("/")) {
+        self.location = window.location.href + "/"
+    }
+    ;
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127069816-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127069816-1');
+</script>
+
+
 </body>
 </html>

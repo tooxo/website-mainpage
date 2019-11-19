@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63783ea5-a791-4fb0-a0ea-506291242db2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/genius.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OTOgi1V85vYEcsxByPjEUig1uY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -114,6 +111,7 @@
       <workItem from="1572458144515" duration="669000" />
       <workItem from="1572559069262" duration="1895000" />
       <workItem from="1573675248540" duration="704000" />
+      <workItem from="1574195048343" duration="832000" />
     </task>
     <servers />
   </component>
