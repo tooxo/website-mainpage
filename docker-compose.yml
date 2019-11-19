@@ -18,3 +18,13 @@ services:
             - "8006:8006"
         env_file:
           - ./SpotifyToMp3/vars.env
+    awr:
+        build:
+          context: ./ArtistWordRanker
+        command: /bin/sh -c "cd /usr/src/app && python server.py"
+        volumes:
+          - ./ArtistWordRanker:/usr/src/app/
+        ports:
+            - "8888:8888"
+        env_file:
+          - ./ArtistWordRanker/.env

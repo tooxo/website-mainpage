@@ -33,7 +33,7 @@ let search = function () {
     }
 
     fetch(
-        "http://localhost:8888/api/search", {
+        location.origin+"/api/search", {
             method: "POST",
             body: value
         }
@@ -87,7 +87,7 @@ let search_back = function () {
 let start_carousel = function (artist_name) {
     let carousel = document.getElementById("carousel");
     document.getElementById("image_selection_container").style = "";
-    fetch("http://localhost:8888/api/album_art", {
+    fetch("api/album_art", {
         method: "POST",
         body: artist_name,
     }).then(response => {
@@ -161,7 +161,7 @@ let update_frontend = function (json) {
             image_open.href = url;
             image_box.style = "";
             let image_download = document.getElementById("image_download");
-            let base = location.origin + "/api/download?url=";
+            let base = "api/download?url=";
             let enc = btoa(url);
             image_download.href = base + enc
         }
@@ -171,7 +171,7 @@ let update_frontend = function (json) {
 
 let update_check = function (job_id) {
 
-    fetch("/api/image_status", {
+    fetch("api/image_status", {
         method: 'POST',
         body: job_id
     }).then(res => {
@@ -209,7 +209,7 @@ let submit = function () {
     document.getElementById("getting_started").setAttribute("hidden", "true");
     document.getElementById("patience").style = "min-height: auto;";
     document.getElementById("select_cont").style = "display:none;";
-    fetch("/api/generate_image", {
+    fetch("api/generate_image", {
         method: "POST",
         body: _doc,
     }).then(response => {

@@ -5,14 +5,15 @@ import threading
 import multiprocessing.pool
 from urllib.parse import quote
 import requests_cache
+import os
 
 requests_cache.install_cache("requests.cache")
 
 
 class Spotify:
     def __init__(self):
-        self.client_id = "3c04f5da2a604b82b344b887d34bf5c9"
-        self.client_secret = "feaad0f62c8348c2a05d2e4ded3df383"
+        self.client_id = os.environ.get("SPOTIFY_CLIENT", "")
+        self.client_secret = os.environ.get("SPOTIFY_SECRET", "")
         self.token = ""
 
     def _invalidate_token(self):

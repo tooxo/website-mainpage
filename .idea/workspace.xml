@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63783ea5-a791-4fb0-a0ea-506291242db2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MainPage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MainPage.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/genius.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dots.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/dots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dots.vash" beforeDir="false" afterPath="$PROJECT_DIR$/views/dots.vash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,19 +20,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="789" />
   </component>
   <component name="ProjectId" id="1OTOgi1V85vYEcsxByPjEUig1uY" />
   <component name="PropertiesComponent">
@@ -42,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Schreibtisch/discordbot/discordbot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -115,6 +108,12 @@
       <workItem from="1565299413895" duration="3198000" />
       <workItem from="1565561659516" duration="28000" />
       <workItem from="1565900852543" duration="221000" />
+      <workItem from="1566035317022" duration="18000" />
+      <workItem from="1566135344759" duration="12000" />
+      <workItem from="1570136434116" duration="1959000" />
+      <workItem from="1572458144515" duration="669000" />
+      <workItem from="1572559069262" duration="1895000" />
+      <workItem from="1573675248540" duration="704000" />
     </task>
     <servers />
   </component>
