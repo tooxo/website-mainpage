@@ -1,0 +1,16 @@
+language: node
+node_js:
+    - '12' # EOL: April 2022
+    - '11' # EOL: June 2019
+    - '10' # EOL: April 2021
+    - '8' # EOL: December 2019
+
+services:
+    - docker
+
+before_deploy:
+    - docker build . -t docker.pkg.github.com/tooxo/website-mainpage/web
+
+deploy:
+    provider: script
+    script: bash docker_publish
