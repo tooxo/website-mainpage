@@ -6,19 +6,77 @@
     <script src="/script/jszip.js"></script>
     <script src="/script/FileSaver.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        #container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column
+        }
+
+        @media screen and (max-device-width: 600px) {
+
+            div#container a#home{
+                font-size: 4em;
+
+            }
+
+            div#container p {
+                font-size: 2em;
+            }
+
+            div#button_container {
+                width: 80vw;
+                display: flex;
+                flex-direction: column;
+            }
+
+            div#button_container input {
+                margin-bottom: .2rem;
+                height: 3em;
+                font-size: 1.5em;
+            }
+
+            div#button_container button {
+                font-size: 1.5em;
+                height: 3em;
+            }
+
+            div#title_container {
+                width: 90vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                font-size: 2.1em;
+            }
+
+            div#title_container center a h4 {
+                font-size: 2em;
+            }
+        }
+
+        @media screen and (min-device-width: 600px) {
+            div#button_container {
+                width: unset;
+            }
+        }
+    </style>
 </head>
 
 <body style="overflow: hidden; background-color: rgb(32, 34, 36); font-family: Ubuntu, sans-serif;">
-<div style="display: flex; height: 100vh; width: 100vw; justify-content: center; align-items: center; flex-direction: column">
-    <a style="position: fixed; color: white; top: 0; left: 0; padding: 10px; font-family: Ubuntu, sans-serif" href="/">
+<div id="container">
+    <a style="position: fixed; color: white; top: 0; left: 0; padding: 10px; font-family: Ubuntu, sans-serif" href="/" id="home">
         ➥ Homepage </a>
-    <div>
+    <div id="title_container">
         <h1 id="title" style="color: white; margin-bottom: 0; padding-bottom: 0; top: 0; position: relative;">Reddit
             Image Downloader</h1>
         <center><a href="/reddit/explanation"><h4 style="color: white; top: 0; padding-top: 0; margin-top: 0"
                                                   title="Click Me.">How does it work?</h4></a></center>
     </div>
-    <div>
+    <div id="button_container" class="button_container">
         <input id="subreddit" placeholder="subreddit" type="text">
         <input id="count_of_images" type=number placeholder="number of images">
         <button id="submit" onclick="submit()">Submit</button>
@@ -187,7 +245,6 @@
 
     gtag('config', 'UA-127069816-1');
 </script>
-
 
 </body>
 </html>
