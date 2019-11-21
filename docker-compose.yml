@@ -6,16 +6,16 @@ services:
         volumes:
             - .:/usr/src/app/
             - /usr/src/app/node_modules
-        ports:
-            - "8002:8080"
+        #ports:
+        #    - "8002:8080"
     web2:
         build:
             context: ./SpotifyToMp3
         command: /bin/sh -c "cd /usr/src/app/ && gunicorn --bind=0.0.0.0:8006 wsgi:app"
         volumes:
             - ./SpotifyToMp3:/usr/src/app/
-        ports:
-            - "8006:8006"
+        #ports:
+        #    - "8006:8006"
         env_file:
           - ./SpotifyToMp3/vars.env
     awr:
@@ -24,7 +24,7 @@ services:
         command: /bin/sh -c "cd /usr/src/app && python server.py"
         volumes:
           - ./ArtistWordRanker:/usr/src/app/
-        ports:
-            - "8888:8888"
+        #ports:
+        #    - "8888:8888"
         env_file:
           - ./ArtistWordRanker/.env

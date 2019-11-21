@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63783ea5-a791-4fb0-a0ea-506291242db2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtistWordRanker/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ArtistWordRanker/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +42,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -112,6 +115,14 @@
       <workItem from="1572559069262" duration="1895000" />
       <workItem from="1573675248540" duration="704000" />
       <workItem from="1574195048343" duration="832000" />
+      <workItem from="1574198648215" duration="703000" />
+      <workItem from="1574268802016" duration="805000" />
+      <workItem from="1574270953204" duration="6012000" />
+      <workItem from="1574282983825" duration="354000" />
+      <workItem from="1574283382944" duration="2242000" />
+      <workItem from="1574359469303" duration="1259000" />
+      <workItem from="1574365696957" duration="67000" />
+      <workItem from="1574365791770" duration="2123000" />
     </task>
     <servers />
   </component>
