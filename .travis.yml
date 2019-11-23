@@ -11,13 +11,13 @@ before_deploy:
 deploy:
     # Deploy MainPage to GitHub
     -   provider: script
-        script: bash -c "echo '"$GITHUB_KEY" | docker login docker.pkg.github.com --username "$GITHUB_USERNAME" --password-stdin; docker push docker.pkg.github.com/tooxo/website-mainpage/mainpage'
+        script: bash -c 'echo '"$GITHUB_KEY" | docker login docker.pkg.github.com --username "$GITHUB_USERNAME" --password-stdin; docker push docker.pkg.github.com/tooxo/website-mainpage/mainpage'
     # Deploy MainPage to DockerHub
     -   provider: script
         script: bash -c 'echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin; docker push tooxo/website-mainpage:mainpage'
     # Deploy Spotify2mp3 to GitHub
     -   provider: script
-        script: bash -c "echo '"$GITHUB_KEY" | docker login docker.pkg.github.com --username "$GITHUB_USERNAME" --password-stdin; docker push docker.pkg.github.com/tooxo/website-mainpage/spotifytomp3'
+        script: bash -c 'echo "$GITHUB_KEY" | docker login docker.pkg.github.com --username "$GITHUB_USERNAME" --password-stdin; docker push docker.pkg.github.com/tooxo/website-mainpage/spotifytomp3'
     # Deploy Spotify2Mp3 to DockerHub
     -   provider: script
         script: bash -c 'echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin; docker push tooxo/website-mainpage:spotifytomp3'
