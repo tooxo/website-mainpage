@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+    main:
+        image: tooxo/website-mainpage:web
+        command: npm start
+        ports:
+            - 8080:8080
+    spotify:
+        image: tooxo/website-mainpage:spotifytomp3
+        working_dir: /usr/src/app/
+        command: gunicorn --bind=0.0.0.0:8006 wsgi:app
+        ports:
+            - 8006:8006
+        env_file:
+            - spotify.env
+    awr:
+        image: tooxo/website-mainpage:awr
+        working_dir: /usr/src/app/
+        command: python server.py
+        ports:
+            - 8888:8888
+        env_file:
+            - awr.env

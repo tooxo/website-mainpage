@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Meta -->
+    <title>Till Schulte</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Internetseite von Till Schulte">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link href="css/title.css" rel="stylesheet">
+    <link href="css/slideshow.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body style="margin: 0; overflow-x: hidden;">
+<div class="top scrollspy" id="top">
+
+    <h2><a id="name" class="lato title un" style="text-align:center; z-index: 10;">Till Schulte</a></h2>
+    <img class="mountains" id="mountains"
+         style="background-image: url('/image/Mountainslowres.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+    <a class="topbutton" href="#middle">V</a>
+
+</div>
+<div class="middle scrollspy" id="middle">
+
+    <a href="https://github.com/tooxo" target="_blank">
+        <div class="github"></div>
+    </a>
+    <a href="https://open.spotify.com/user/ti_l_l" target="_blank">
+        <div class="spotify"></div>
+    </a>
+    <a class="topbutton" href="#bottom">V</a>
+</div>
+<div class="bottom" id="bottom">
+    <div class="slideshow-container">
+        <a href="https://f.chulte.de" target="_blank">
+            <div class="mySlides fade"
+                 style="background-image: url(/image/discord.gif); background-size: cover; background-position: center; width: 90vw; height: 90vh;">
+                <div class="textbox">
+                    <span class="text lato">DiscordBot</span>
+                    <span class="textsmall lato">A simple Discord Music Bot.</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://s.chulte.de/reddit" target="_blank">
+            <div class="mySlides fade"
+                 style="background-image: url(/image/reddit.gif); background-size: cover; background-position: center; width: 90vw; height: 90vh;">
+                <div class="textbox">
+                    <span class="text lato">Reddit IMG-DL</span>
+                    <span class="textsmall lato">Bulk-Download Images From Reddit!</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://s.chulte.de/dots" target="_blank">
+            <div class="mySlides fade"
+                 style="border-style: solid; border-width: 2px; border-color: white; background-size: cover; background-position: center; width: 90vw; height: 90vh;">
+                <div class="textbox">
+                    <span class="text lato">Dots</span>
+                    <span class="textsmall lato">Works great with WallpaperEngine</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://s.chulte.de/spotify" target="_blank">
+            <div class="mySlides fade"
+                 style="background-image: url(/image/spotifyrandom.gif); background-size: cover; background-position: center; width: 90vw; height: 90vh;">
+                <div class="textbox">
+                    <span class="text lato">SpotifyRandomizer</span>
+                    <span class="textsmall lato">Randomizes Playlists!</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://github.com/tooxo/AudioVisualizer" target="_blank">
+            <div class="mySlides fade"
+                 style="background-image: url(/image/lights.gif); background-size: cover; background-position: center; width: 90vw; height: 90vh;">
+                <div class="textbox">
+                    <span class="text lato">AudioVisualizer</span>
+                    <span class="textsmall lato">Reacts to music!</span>
+                </div>
+            </div>
+        </a>
+        <a href="/files" target="_blank">
+            <div class="mySlides fade"
+                 style="background-image: url(/image/more.gif); background-size: auto; background-repeat: no-repeat; background-color: white; background-position: center; width: 90vw; height: 90vh;">
+                <div class="textbox">
+                    <span class="text lato">More</span>
+                    <span class="textsmall lato"></span>
+                </div>
+            </div>
+        </a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+</div>
+
+<iframe id="frame2" class="frame" src="dots" frameborder="0"></iframe>
+<script async src="js/main.js"></script>
+</body>
+<footer>
+    <div id="footer" class="footer">
+        <a class="lato impressum" href="/impressum">Impressum</a>
+
+        <script src="js/resize.js"></script>
+        <script async src="js/slideshow.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127069816-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-127069816-1');
+        </script>
+
+    </div>
+</footer>
+</html>

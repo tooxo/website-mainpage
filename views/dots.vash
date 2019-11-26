@@ -1,8 +1,0 @@
-@html
-    <body style="margin: 0;">
-        <div id="div" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0; background: @model.background_color">
-            <canvas id="canvas" style="background: @model.background_color"></canvas>
-            <info color_to_use="@model.background_color"></info>
-            <script src="/dots/dots.js"></script>
-        </div>
-    </body>

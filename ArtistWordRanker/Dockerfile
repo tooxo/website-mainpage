@@ -19,4 +19,7 @@ RUN apt-get update && apt-get install libjpeg-dev libev-dev \
     && apt-get autoremove -y \
     && apt-get clean
 
+WORKDIR /usr/src/app/
+COPY . .
+
 ENTRYPOINT ["/usr/bin/dumb-init"]

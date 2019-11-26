@@ -1,13 +1,12 @@
 version: '2'
 services:
     web:
-        build: .
-        command: npm run start
-        volumes:
-            - .:/usr/src/app/
-            - /usr/src/app/node_modules
-        #ports:
-        #    - "8002:8080"
+        build:
+          context: MainPage
+        #image: tooxo/website-mainpage:web
+        command: npm start
+        ports:
+            - "8002:8080"
     web2:
         build:
             context: ./SpotifyToMp3

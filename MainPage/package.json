@@ -1,0 +1,21 @@
+{
+	"name": "docker_main_page",
+	"version": "0.1.0",
+	"description": "Website Mainpage",
+	"author": "Till Schulte",
+	"main": "server.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/tooxo/website-mainpage.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.16.1",
+		"request": "^2.88.0",
+		"vash": "^0.12.9",
+		"pug": "^2.0.4"
+	}
+}
