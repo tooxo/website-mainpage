@@ -3,8 +3,8 @@ services:
     - docker
 
 before_deploy:
-    - docker build . -t docker.pkg.github.com/tooxo/website-mainpage/mainpage
-    - docker build . -t tooxo/website-mainpage:mainpage
+    - docker build MainPage/ -t docker.pkg.github.com/tooxo/website-mainpage/mainpage
+    - docker build MainPage/ -t tooxo/website-mainpage:mainpage
     - docker build SpotifyToMp3/ -t docker.pkg.github.com/tooxo/website-mainpage/spotifytomp3
     - docker build SpotifyToMp3/ -t tooxo/website-mainpage:spotifytomp3
     - docker build ArtistWordRanker/ -t docker.pkg.github.com/tooxo/website-mainpage/awr
