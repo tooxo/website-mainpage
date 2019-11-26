@@ -2,7 +2,7 @@ version: '2'
 
 services:
     main:
-        image: tooxo/website-mainpage:web
+        image: tooxo/website-mainpage:mainpage
         command: npm start
         ports:
             - 8080:8080
