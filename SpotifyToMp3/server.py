@@ -5,6 +5,7 @@ import youtube_dl
 import requests
 from queue import Queue
 import os
+import bjoern
 
 CLIENT_ID = os.environ.get("CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("CLIENT_SECRET", "")
@@ -182,4 +183,5 @@ def request_token():
         return access_token
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8006)
+    bjoern.listen(app, host="0.0.0.0", port=8006)
+    bjoern.run()

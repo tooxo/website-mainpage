@@ -10,7 +10,8 @@ services:
     web2:
         build:
             context: ./SpotifyToMp3
-        command: /bin/sh -c "cd /usr/src/app/ && gunicorn --bind=0.0.0.0:8006 wsgi:app"
+        working_dir: /usr/src/app/
+        command: python server.py
         volumes:
             - ./SpotifyToMp3:/usr/src/app/
         #ports:

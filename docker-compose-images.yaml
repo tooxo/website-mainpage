@@ -9,7 +9,7 @@ services:
     spotify:
         image: tooxo/website-mainpage:spotifytomp3
         working_dir: /usr/src/app/
-        command: gunicorn --bind=0.0.0.0:8006 wsgi:app
+        command: python server.py
         ports:
             - 8006:8006
         env_file:
