@@ -114,8 +114,12 @@ class Server:
 
     def start_up(self):
         self.sqlite.initiate_database()
-        bjoern.listen(self.app, host="0.0.0.0", port=int(os.environ.get("PORT", 8888)))
-        bjoern.run()
+        threading.Thread(target=self.queue_task).start()
+        if os.environ.get("DEBUG", "False") == "False":
+            bjoern.listen(self.app, host="0.0.0.0", port=int(os.environ.get("PORT", 8888)))
+            bjoern.run()
+        else:
+            self.app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8888)))
 
 
 if __name__ == "__main__":
