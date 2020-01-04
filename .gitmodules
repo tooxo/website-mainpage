@@ -1,0 +1,3 @@
+[submodule "ArtistWordRanker"]
+	path = ArtistWordRanker
+	url = https://github.com/tooxo/ArtistWordRanker.git
