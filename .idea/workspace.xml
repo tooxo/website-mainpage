@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63783ea5-a791-4fb0-a0ea-506291242db2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtistWordRanker/_Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MainPage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MainPage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtistWordRanker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ArtistWordRanker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtistWordRanker/backend/dynamodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArtistWordRanker/backend/dynamodb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtistWordRanker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ArtistWordRanker/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArtistWordRanker/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ArtistWordRanker/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtistWordRanker/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ArtistWordRanker/requirements.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,49 +26,54 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1OTOgi1V85vYEcsxByPjEUig1uY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MainPage/dots" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/MainPage" />
+      <recent name="$PROJECT_DIR$/MainPage/views" />
+      <recent name="$PROJECT_DIR$/MainPage/index/css" />
+      <recent name="$PROJECT_DIR$/MainPage/error/views" />
+      <recent name="$PROJECT_DIR$/MainPage/impressum" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MainPage/dots" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
@@ -85,6 +95,18 @@
         <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -122,7 +144,15 @@
       <workItem from="1574283382944" duration="2242000" />
       <workItem from="1574359469303" duration="1259000" />
       <workItem from="1574365696957" duration="67000" />
-      <workItem from="1574365791770" duration="2123000" />
+      <workItem from="1574365791770" duration="13658000" />
+      <workItem from="1574526935155" duration="7763000" />
+      <workItem from="1574602612387" duration="1980000" />
+      <workItem from="1574714177526" duration="669000" />
+      <workItem from="1574714864384" duration="156000" />
+      <workItem from="1574716512825" duration="6000" />
+      <workItem from="1574716540281" duration="17606000" />
+      <workItem from="1574883498231" duration="2682000" />
+      <workItem from="1575406506156" duration="865000" />
     </task>
     <servers />
   </component>
@@ -144,6 +174,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="586" y="214" width="800" height="684" key="#Notifications" timestamp="1574883528602">
+      <screen x="62" y="27" width="1858" height="1053" />
+    </state>
+    <state x="586" y="214" width="800" height="684" key="#Notifications/62.27.1858.1053@62.27.1858.1053" timestamp="1574883528602" />
   </component>
   <component name="masterDetails">
     <states>

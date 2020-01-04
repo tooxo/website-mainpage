@@ -1,9 +1,0 @@
-{
-  "name": "ArtistWordRanker",
-  "description": " ",
-  "image": "heroku/python",
-  "repository": "https://github.com/tooxo/ArtistWordRanker",
-  "keywords": [
-    "artistwordranker"
-  ]
-}
