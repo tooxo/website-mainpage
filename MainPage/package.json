@@ -13,7 +13,7 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.16.1",
+		"express": "^4.17.3",
 		"request": "^2.88.0",
 		"vash": "^0.12.9",
 		"pug": "^3.0.1"
